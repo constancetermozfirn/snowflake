@@ -1,0 +1,208 @@
+steps:
+  SRC_DAILY_REPORT-1d2c4257-2398-4f0b-aabf-be5f3148598b:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationName: STORAGE_LOCATION_1
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f652a73e-610f-4642-97da-093aa51a786e
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: COUNTRY_REGION
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d093145d-0591-4854-8b6e-a8c17179fb27
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: CASES_TOTAL
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: d9155593-35c6-45d5-b6a8-bd20a470da36
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: CASES_TOTAL_PER_100000
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: f347c59e-5b7b-48c9-9df7-12410c26a45c
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: CASES
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: df13caf1-21f0-4116-9b3d-516a42041b4b
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: DEATHS_TOTAL
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 81f17024-fc5d-4347-b0c4-3e0ef3664be7
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: FLOAT
+            defaultValue: ""
+            description: ""
+            name: DEATHS_TOTAL_PER_100000
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: ef70aaf3-3afe-4577-9029-0a88721073e2
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: DEATHS
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 29d8841e-8e5a-4b42-bfe3-8102da40821f
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: TRANSMISSION_CLASSIFICATION
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e9f7e64e-7993-4e6c-8213-e60a57b2fa38
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: TIMESTAMP_NTZ(9)
+            defaultValue: ""
+            description: ""
+            name: DATE
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 99068188-60dc-4728-b342-5112d087d857
+              stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
+            config: {}
+            dataType: VARCHAR(2)
+            defaultValue: ""
+            description: ""
+            name: ISO3166_1
+            nullable: true
+            primaryKey: false
+            sourceColumnReferences:
+              - columnReferences: []
+                transform: ""
+            transform: ""
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('STORAGE_LOCATION_1', 'SRC_DAILY_REPORT') }}
+      name: SRC_DAILY_REPORT
+      schema: ""
+      sqlType: Source
+      table: SRC_DAILY_REPORT
+      type: sourceInput
+    stepCounter: 1d2c4257-2398-4f0b-aabf-be5f3148598b
